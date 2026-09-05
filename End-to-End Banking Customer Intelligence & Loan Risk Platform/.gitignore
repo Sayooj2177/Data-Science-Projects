@@ -1,0 +1,42 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# PyCharm / IntelliJ
+.idea/
+
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local environment variables
+.env
+
+# Large/raw datasets
+Data/raw/
+
+# Jupyter temporary runtime files
+.runtime/
+
+# Large processed datasets
+Data/processed/customer_segmentation.csv
+Data/processed/customer_clean.csv

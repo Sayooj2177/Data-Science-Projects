@@ -1,0 +1,11 @@
+feature,mean_abs_shap
+max_delinquency,0.0364279654463162
+pay_0,0.0339878848612994
+avg_delinquency,0.033768187094145
+num_delinquent_months,0.0335219815186997
+recent_delinquency,0.0274717865985394
+maximum_credit_utilization,0.0149790978568865
+average_credit_utilization,0.0140014924759072
+limit_bal,0.0133293368708696
+total_payment_amount,0.0106066856677244
+pay_2,0.0096166276707819

@@ -1,0 +1,6 @@
+cluster,segment,customers,avg_recency_days,avg_frequency,avg_monetary_value_inr,avg_account_balance_inr,customer_percentage
+0,Low-Value Dormant Customers,255319,61.55,1.0,129.17,61637.92,28.87
+1,High-Value Active Customers,142391,47.96,2.14,3369.95,117290.57,16.1
+2,Recent Moderate-Spend Customers,203762,40.03,1.0,985.19,109208.99,23.04
+3,High-Value At-Risk Customers,279139,65.22,1.0,3323.61,166915.33,31.57
+4,Recently Active Customers,3654,0.0,1.37,2592.31,105593.28,0.41
