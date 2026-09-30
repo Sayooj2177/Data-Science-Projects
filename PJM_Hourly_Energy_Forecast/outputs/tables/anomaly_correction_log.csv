@@ -1,0 +1,2 @@
+Datetime,Original_Value_MW,Corrected_Value_MW,Method,Reason
+2003-05-29,487.0,4938.5,Time-based interpolation,Isolated abnormal value compared with adjacent observations

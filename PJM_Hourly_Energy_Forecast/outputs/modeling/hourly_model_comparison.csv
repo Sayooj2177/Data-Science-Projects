@@ -1,0 +1,5 @@
+Model,Evaluation_Frequency,MAE_MW,RMSE_MW,R2,MAPE_Percent
+Seasonal Naive,Hourly,584.98,779.93,0.3852,10.34
+Random Forest,Hourly,81.03,108.15,0.9882,1.45
+XGBoost,Hourly,53.05,70.93,0.9949,0.95
+LightGBM,Hourly,56.75,74.21,0.9944,1.02
