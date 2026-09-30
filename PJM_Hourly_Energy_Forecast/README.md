@@ -8,6 +8,10 @@ The project follows an end-to-end machine learning and time-series forecasting w
 
 The final selected model is an **XGBoost Regressor**.
 
+## 🚀 Live Demo
+
+🔗 **Streamlit App:** https://data-science-projects-ggoi47yjqpux3kypvpubhj.streamlit.app/
+
 ---
 
 ## Objectives
