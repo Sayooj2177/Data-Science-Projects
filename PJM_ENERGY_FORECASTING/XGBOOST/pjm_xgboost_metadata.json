@@ -1,0 +1,37 @@
+{
+  "model_name": "XGBoost",
+  "model_label": "XGBoost Regressor",
+  "overview": [
+    "This page uses a gradient-boosted tree model (XGBoost) trained on time-based features, holiday flags and lag features (previous hour, previous day, previous week).",
+    "Because future lag values are unknown, the 30-day forecast is generated recursively: each predicted hour is used as the lag input for the following hours."
+  ],
+  "avp_title": "Actual vs Predicted (last 7 days, recursive back-test)",
+  "results_note": "The random 80/20 split lets the model see the actual previous hour, so it looks very accurate. The recursive row is the realistic one, because it forecasts without any actual lag values, exactly like the 30-day forecast.",
+  "details": {
+    "Algorithm": "XGBRegressor (gradient-boosted trees)",
+    "n_estimators": 100,
+    "random_state": 42,
+    "Features used": "Year, Month, Day, Hour, DayOfWeek, Weekend, Season, Holiday, Lag_1, Lag_24, Lag_168",
+    "Forecast method": "Recursive multi-step (predictions feed the lag features)",
+    "Training rows": 143064,
+    "Forecast horizon": "720 hours (30 days)",
+    "Final model": "Refitted on the complete history before forecasting"
+  },
+  "feature_importance": {
+    "Year": 0.0008,
+    "Month": 0.0044,
+    "Day": 0.0005,
+    "Hour": 0.0247,
+    "DayOfWeek": 0.0045,
+    "Weekend": 0.0,
+    "Season": 0.0063,
+    "Holiday": 0.0016,
+    "Lag_1": 0.952,
+    "Lag_24": 0.0036,
+    "Lag_168": 0.0016
+  },
+  "notes": [
+    "Recursive forecasts accumulate error, so the later days of the 30-day horizon are less reliable than the first few days."
+  ],
+  "forecast_horizon_hours": 720
+}

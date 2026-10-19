@@ -1,0 +1,25 @@
+{
+  "model_name": "SARIMAX",
+  "model_label": "SARIMAX(2,0,1)x(1,1,1,24)",
+  "overview": [
+    "This page uses a seasonal time-series model (SARIMAX) that learns the autoregressive, moving-average and 24-hour seasonal structure of the hourly demand history.",
+    "The model forecasts the next 30 days directly from the seasonal history, so it needs no future lag values."
+  ],
+  "avp_title": "Actual vs Predicted (last 7 days hold-out)",
+  "results_note": "SARIMAX was scored on the last 7 days (168 hours) of data that it did not train on.",
+  "details": {
+    "Algorithm": "SARIMAX",
+    "Order (p, d, q)": "(2, 0, 1)",
+    "Seasonal order (P, D, Q, s)": "(1, 1, 1, 24)",
+    "Seasonal period": "24 hours",
+    "Training window": "8641 hours (from 2017-08-01)",
+    "AIC": 98653.17,
+    "Forecast method": "Direct multi-step forecast from the seasonal state",
+    "Forecast horizon": "720 hours (30 days)"
+  },
+  "feature_importance": {},
+  "notes": [
+    "Parameters were estimated on the training window and the state was then updated with the latest 168 hours before forecasting (no refit)."
+  ],
+  "forecast_horizon_hours": 720
+}
